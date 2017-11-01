@@ -1,5 +1,9 @@
 # Collaborative Translation Framework (CTF) Reporting API
 
+> [!NOTE]
+> As of January 1, 2018 AddTranslation() will do nothing, it will silently fail. The API response will still be success (200), but nothing will be written.
+Microsoft will replace the functionality with an extended version of the Translator Hub API, which produces a custom system with your terminology, and you can invoke it using the Category ID of your custom Hub system. See [https://hub.microsofttranslator.com](https://hub.microsofttranslator.com). 
+
 The Collaborative Translation Framework (CTF) Reporting API returns statistics and the actual content in the CTF store. This API is different from the GetTranslations() method because it: 
 
  * Returns the translated content and its total count only from your account (appId or Azure Marketplace account). 
